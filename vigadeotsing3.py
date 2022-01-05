@@ -36,22 +36,22 @@ def vahetus(a:int,b:int):
     abi=a
 
 def generaator(n:int,loend,a:int,b:int):
-    """ generiruet spisk
-    :param int n: koli4estvo tsifr
-    :param list loend: spisok v kotorom budut sgenerirovani tsifri
-    :param int a: minimalnoe zna4enie
-    :param int b: maksimalnoe zna4enie
+    """ 
+    :param int n: кол-во цифр
+    :param list loend: список в котором цифры
+    :param int a: минимальное
+    :param int b: максимальное
     """
     for i in range (n):
         loend.append(randint(a,b))
     
 
 def jagamine(loend,p,n,nol):
-    """otdeljaet positivnie 4isla ot nigativnih i otdeljaet nuli v otdelnie spiski
-    :param list loend: spisk so vsemi zna4enijami
-    :param list p: spisk s positivom
-    :param list n: spisk s negativom
-    :param list nol: spisk s nuljami
+    """
+    :param list loend: список со значениями
+    :param list p: позитивные
+    :param list n: негативные
+    :param list nol: нули
     """
     for el in loend:
         if el>0:
@@ -62,9 +62,8 @@ def jagamine(loend,p,n,nol):
             nol.append(el)
 
 def keskmine(loend):
-    """nahodit srednie zna4enie v spiske
-    vosvrashaet srednie zna4enie
-    :param list loend: spisok v kotorom ishut srednie 4islo
+    """
+    :param list loend: среднее число
     rtype: float
     """
     n=len(loend)
@@ -78,9 +77,9 @@ def keskmine(loend):
     return kesk
 
 def lisamine(loend,el:float):
-    """dobavljaet zadanoe zna4enie v zadanii spisk spisok
-    :param list loend: spisok v kotorii dobavitsja zna4enie
-    :param float el: element kotorii dobavitsja v spisk
+    """
+    :param list loend: добавляется значение
+    :param float el: элемент который добавится в список
     """
     loend.append(el)
     loend.sort()
